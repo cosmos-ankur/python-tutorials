@@ -1,0 +1,14 @@
+class Computer:
+    #atrributes -> variables
+    #behaviour -> methods(functions)
+    def config(self):
+        print('i5,16gb,1TB')
+
+# com1 does not have any type
+com1 = Computer() #object of Computer class
+com2 = Computer() #object of Computer class
+print(type(com1)) #output : <class '__main__.Computer'>
+Computer.config(com1) #calling config for com1 using name of class
+Computer.config(com2) #calling config for com2 using name of class
+com1.config()
+com2.config() #calling config using objects itself
